@@ -69,15 +69,28 @@ import dotenv from "dotenv";
 
 
 // //Francis
+/*
 export const sequelize = new Sequelize(
-    'consultoriosjuridicos2', 
-    'fvelasco', 
-    'ltic', 
+    'consultoriosjuridicos2',
+    'fvelasco',
+    'ltic',
     {
-        host: '192.168.161.3', 
+        host: '192.168.161.3',
         dialect: 'mysql'
     }
+);*/
+export const sequelize = new Sequelize(
+    'consultoriosjuridicos',      // MYSQL_DATABASE
+    'appuser',    // MYSQL_USER
+    'pass123',    // MYSQL_PASSWORD
+    {
+        host: '127.0.0.1',
+        dialect: 'mysql',
+        port: 3307,
+    }
 );
+
+
 
 // export const sequelize = new Sequelize(
 //     'seguimiento_final3', 
